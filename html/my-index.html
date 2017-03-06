@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>My-Item</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+    <!--满屏滚动需要引入css-->
+    <link rel="stylesheet" href="../css/jquery.fullPage.css"/>
+    <!--满屏滚动需要引入css-->
+    <link rel="stylesheet" href="../css/full-self.css"/>
+    <!--全屏轮播需要引入css-->
+    <link href="../css/css-quanping/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../css/css-quanping/style.css" rel="stylesheet" type="text/css">
+    <!--全屏轮播需要引入css文件end-->
+    <!--全屏滚动兼容写法-->
+    <!--[if IE]>
+        <script type="text/javascript">
+          var console = { log: function() {} };
+        </script>
+    <![endif]-->
+    <!--全屏滚动兼容写法end-->
+    <!--满屏滚动需要引入js-->
+    <script src="../js/jquery-1.7.2.js"></script>
+    <!--满屏滚动需要引入js-->
+  <script src="../js/new2-jquery-ui.min.js"></script>
+    <!--满屏滚动需要引入js-->
+    <script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+    <!--满屏滚动需要引入js-->
+    <script type="text/javascript" src="../js/full-self.js"></script>
+    <!--满屏滚动需要引入js-->
+    <script type="text/javascript">
+     $(document).ready(function() {
+            $('#fullpage').fullpage({
+             /*sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'purple', '#ccddff'],*/
+             anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],/*这是锚点*/
+              menu: '#menu',
+            });
+        });
+    </script>
+    <!--导航加菜单-->
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/component.css" />
+    <script src="../js/modernizr.custom.js"></script>
+    <!--导航加菜单end-->
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <!--h5部分和angular等框架部分css-->
+    <link rel="stylesheet" href="../css2/theme.css">
+
+    <!-- TODO: Predefined Schemes (select one of the presented) -->
+    <link rel="alternate stylesheet" href="../css2/theme-persimmon.css" title="theme-persimmon">
+    <link rel="alternate stylesheet" href="../css2/theme-atomic-tangerine.css" title="theme-atomic-tangerine">
+    <link rel="alternate stylesheet" href="../css2/theme-yellow-sea.css" title="theme-yellow-sea">
+    <link rel="alternate stylesheet" href="../css2/theme-rio-grande.css" title="theme-rio-grande">
+    <link rel="alternate stylesheet" href="../css2/theme-vida-loca.css" title="theme-vida-loca">
+    <link rel="alternate stylesheet" href="../css2/theme-mountain-meadow.css" title="theme-mountain-meadow">
+    <link rel="alternate stylesheet" href="../css2/theme-java.css" title="theme-java">
+    <link rel="alternate stylesheet" href="../css2/theme-mariner.css" title="theme-mariner">
+    <link rel="alternate stylesheet" href="../css2/theme-medium-purple.css" title="theme-medium-purple">
+    <link rel="alternate stylesheet" href="../css2/theme-lavender-magenta.css" title="theme-lavender-magenta">
+    <!--h5部分和angular等框架部分css end-->
+</head>
+<body class="loaded">
+<!--要写满屏滚动效果，必须包一个带id的fullpage，其他每一个模块都有自己独特的id-->
+<div id="fullpage">
+
+    <!--轮播图和导航-->
+    <div class="section" id="section0">
+
+        <!--导航加菜单-->
+        <div class="container" style="position: absolute; top: 0px; right: 0px; z-index: 13; width: 100%;">
+            <div class="main">
+                <nav id="cbp-hrmenu" class="cbp-hrmenu">
+                    <ul >
+                        <!--首页-->
+                        <li>
+                            <a href="#">首页</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner">
+                                    <div style="width: 100%;">
+                                        <h4 data-menuanchor="firstPage"><a href="#firstPage"> 欢迎来到我的网站</a></h4>
+                                        <ul>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <!--h5案例-->
+                        <li>
+                            <a href="#">h5案例</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner">
+                                    <div>
+                                        <h4 data-menuanchor="secondPage"><a href="#secondPage"> 教育了类网站</a></h4>
+                                        <ul>
+                                            <li><a href="#">111</a></li>
+                                            <li><a href="#">222</a></li>
+                                            <li><a href="#">333</a></li>
+                                        </ul>
+                                        <h4>农业类网站</h4>
+                                        <ul>
+                                            <li><a href="#">11</a></li>
+                                            <li><a href="#">22</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>蛋糕类网站</h4>
+                                        <ul>
+                                            <li><a href="#">333</a></li>
+                                            <li><a href="#">444</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>鲜花类网站</h4>
+                                        <ul>
+                                            <li><a href="#">11</a></li>
+                                            <li><a href="#">22</a></li>
+                                            <li><a href="#">33</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <!--前端框架-->
+                        <li>
+                            <a href="#">前端框架</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner">
+                                    <div>
+                                        <h4 data-menuanchor="3rdPage"><a href="#3rdPage"> angular</a></h4>
+                                        <ul>
+                                            <li><a href="#">11</a></li>
+                                            <li><a href="#">22</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>vue&react</h4>
+                                        <ul>
+                                            <li><a href="#">44</a></li>
+                                            <li><a href="#">66</a></li>
+                                            <li><a href="#">77</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>网页</h4>
+                                        <ul>
+                                            <li><a href="#">44</a></li>
+                                            <li><a href="#">66</a></li>
+                                            <li><a href="#">77</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                        <!--联系我-->
+                        <li>
+                            <a href="#">联系我</a>
+                            <div class="cbp-hrsub">
+                                <div class="cbp-hrsub-inner" >
+                                    <div style="width: 100%; text-align: center">
+                                        <h4>联系我</h4>
+                                        <ul>
+                                            <li data-menuanchor="lastPage"><a href="#lastPage">找到我</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- /cbp-hrsub-inner -->
+                            </div><!-- /cbp-hrsub -->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--导航加菜单end-->
+        <!--全屏轮播图-->
+        <div class="phoenix-slider">
+        <div class="phoenix-feather"> <img src="../img/1.jpg" alt="" /> </div>
+        <!-- END ash -->
+        <div class="phoenix-feather"> <img src="../img/2.jpg" alt="" /> </div>
+        <!-- END ash -->
+        <div class="phoenix-feather"> <img src="../img/3.jpg" alt="" /> </div>
+        <!-- END ash -->
+        <div class="phoenix-feather"> <img src="../img/4.jpg" alt="" /> </div>
+        <!-- END ash -->
+        <div class="phoenix-feather"> <img src="../img/5.jpg" alt="" /> </div>
+        <!-- END ash -->
+        <div class="phoenix-feather"> <img src="../img/6.jpg" alt="" /> </div>
+        <!-- END ash -->
+    </div>
+        <!--全屏轮播图end-->
+    </div>
+    <!--h5 css3-->
+    <div class="section " id="section1" >
+            <section id="projects" class="section-small bg-light-gray">
+                <div class="container">
+
+                    <!-- Section Header -->
+                    <div class="row ">
+
+                        <div class="col-md-6">
+                            <header>
+                                <h2 class="section-title" style="text-align: left;">
+
+                                   H5
+                                    <span class="text-theme">移动端</span>
+                                </h2>
+                            </header>
+                        </div>
+
+                        <div class="col-md-6">
+
+                        </div>
+
+                    </div>
+                    <!-- /Section Header -->
+
+                    <!-- Section Content -->
+                    <div class="row mt row-h5">
+
+                        <div class="col-md-4 col-sm-6 fadeIn wow" data-wow-duration="1.3s">
+                            <a href="../img/project-01.jpg" class="project-item image-popup">
+                                <div class="gallery-image">
+                                    <img src="../img/project-01.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="h4 title">Buildings</div>
+                                    <p class="description"># web-design</p>
+                                    <div class="social">
+                                        <i class="fa fa-fw fa-heart-o"></i> 12
+                                        <i class="fa fa-fw fa-share-square-o"></i> 4
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                            <a href="../img/project-02.jpg" class="project-item image-popup">
+                                <div class="gallery-image">
+                                    <img src="../img/project-02.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="h4 title">Nautical Nonsense</div>
+                                    <p class="description"># illustration</p>
+                                    <div class="social">
+                                        <i class="fa fa-fw fa-heart-o"></i> 18
+                                        <i class="fa fa-fw fa-share-square-o"></i> 3
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                            <a href="../img/project-03.jpg" class="project-item image-popup">
+                                <div class="gallery-image">
+                                    <img src="../img/project-03.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="h4 title">Coffee</div>
+                                    <p class="description"># creative</p>
+                                    <div class="social">
+                                        <i class="fa fa-fw fa-heart-o"></i> 14
+                                        <i class="fa fa-fw fa-share-square-o"></i> 8
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                            <a href="../img/project-04.jpg" class="project-item image-popup">
+                                <div class="gallery-image">
+                                    <img src="../img/project-04.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="h4 title">New York City</div>
+                                    <p class="description"># web-design</p>
+                                    <div class="social">
+                                        <i class="fa fa-fw fa-heart-o"></i> 32
+                                        <i class="fa fa-fw fa-share-square-o"></i> 2
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                            <a href="../img/project-05.jpg" class="project-item image-popup">
+                                <div class="gallery-image">
+                                    <img src="../img/project-05.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="h4 title">The Writer's Collection</div>
+                                    <p class="description"># creative</p>
+                                    <div class="social">
+                                        <i class="fa fa-fw fa-heart-o"></i> 29
+                                        <i class="fa fa-fw fa-share-square-o"></i> 12
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="1.0s">
+                            <a href="../img/project-06.jpg" class="project-item image-popup">
+                                <div class="gallery-image">
+                                    <img src="../img/project-06.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="h4 title">Overhead</div>
+                                    <p class="description"># illustration</p>
+                                    <div class="social">
+                                        <i class="fa fa-fw fa-heart-o"></i> 17
+                                        <i class="fa fa-fw fa-share-square-o"></i> 3
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- /Section content -->
+
+                </div>
+
+            </section>
+    </div>
+    <!--react angular-->
+    <div class="section" id="section2" >
+        <section id="about" class="section">
+            <div class="container">
+
+                    <h2 class="section-title" style="text-align: left;">
+                        前端<span class="text-theme">框架</span>
+                    </h2>
+
+                <div class="row " style="display: none">
+                    <div class="col-md-6 col-md-offset-3">
+                        <header class="text-center">
+                            <h2 class="section-title">About <span class="text-theme">Us</span></h2>
+                            <p class="section-subtitle">It is a long established fact that a reader</p>
+                        </header>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s">
+                        <span class="icon_link_alt icon"></span>
+                        <div class="h3 title">静态布局</div>
+                        <p class="description">
+                           ssssssssssssssssss
+                        </p>
+                        <a href="#" class="btn btn-theme">更多</a>
+                    </div>
+
+                    <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <span class="icon_mobile icon"></span>
+                        <div class="h3 title">动画效果</div>
+                        <p class="description">
+                           ddddddddddddddddddddddd
+                        </p>
+                        <a href="#" class="btn btn-theme">更多</a>
+                    </div>
+
+                    <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <span class="icon_pens icon"></span>
+                        <div class="h3 title">移动端</div>
+                        <p class="description">
+                           333333333333333
+                        </p>
+                        <a href="#" class="btn btn-theme">更多</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--联系我-->
+    <div class="section" id="section3">
+            <!--地图加内容-->
+        <section id="contant" >
+        <div class="container">
+               <div class="contant-con container2">
+                   <div class="my-map" id="allmap" style="width: 334px; height: 374px;"> </div>
+                    <div class="my-des">
+                        <!--<div class="my-computer"></div>-->
+                        <div class="my-resume">
+                            <p class="resume-tit">简介</p>
+                            <p>运用百度API实现<br/>实现地理位置的坐标定位，方便快速的找到响应位置</p>
+                        </div>
+                    </div>
+                   <div class="my-computer">
+                       <div class="terminal"></div>
+                   </div>
+                </div>
+        </div>
+        </section>
+
+
+    </div>
+    <!--<div class="section" id="section4">dddddddddd</div>-->
+</div>
+
+</body>
+<!--<script src="../js/jquery-1.7.2.js"></script>-->
+<script src="../js/javascript.fullPage.js"></script>
+<script src="../js/javascript.fullPage.min.js"></script>
+<!--我的地图-->
+<script src="http://api.map.baidu.com/api?v=2.0&ak=EAc9690e060a06cfe50a260d491afd15"></script>
+<script src="../js/map.js"></script>
+<!--<script src="../js/jquery-1.11.1.min.js"></script>-->
+<script src="../js/jquery.mobile.touchsupport.js"></script>
+<script src="../js/jquery.phoenix.js"></script>
+<script>
+    $(function(){
+        $(document).ready(function(){
+            $('.phoenix-slider').phoenix({
+                fullscreen: true,
+                height: '85%'
+            });
+        });
+    });
+</script>
+<!--全屏轮播图end-->
+<!--导航加菜单-->
+<script src="../js/cbpHorizontalMenu.min.js"></script>
+<script>
+    $(function() {
+        cbpHorizontalMenu.init();
+    });
+</script>
+<!--导航加菜单end-->
+<!--h5和angular等所用js-->
+
+<!--<script src="../js2/jquery-2.2.0.min.js"></script>-->
+<!--<script src="../js2/bootstrap.min.js"></script>
+<script src="../js2/owl.carousel.min.js"></script>
+<script src="../js2/jquery.magnific-popup.min.js"></script>
+<script src="../js2/jquery.validate.min.js"></script>
+<script src="../js2/jquery.stellar.min.js"></script>
+<script src="../js2/wow.min.js"></script>
+<script src="../js2/masonry.pkgd.min.js"></script>
+<script src="../js2/jquery.appear.js"></script>
+<script src="../js2/jquery.animateNumber.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css2/styleswitcher.css" property="">
+<script src="../js2/styleswitcher.js"></script>-->
+<!--打字机效果-->
+<script type="text/javascript" src="../js/typewriting.min.js"></script>
+<script>
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('.terminal').typewriting("党亚林，从事WEB前端工作3年。", {
+                "typing_interval": 200,
+                "blink_interval": "1s",
+                "cursor_color": "#000"
+            }, function() {
+                console.log("END");
+            });
+            setTimeout(function() {
+                $('.terminal').rewrite("党亚林，WEB前端", function() {
+                    console.log("END, 2.");
+                });
+            }, 3300);
+        }, 1000);
+    });
+</script>
+
+</html>
